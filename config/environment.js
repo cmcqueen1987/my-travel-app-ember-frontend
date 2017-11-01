@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/my-travel-app-ember-frontend';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://my-travel-app-capstone.herokuapp.com/';
+    ENV.apiHost = 'https://my-travel-app-capstone.herokuapp.com';
   }
 
   return ENV;
