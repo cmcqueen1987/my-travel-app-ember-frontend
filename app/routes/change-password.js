@@ -10,6 +10,8 @@ export default Ember.Route.extend({
       //.then(() => this.get('auth').signOut())
       .then(() => this.transitionTo('application'))
       .then(() => {
+
+
         this.get('flashMessages')
         .success('Successfully changed your password!');
       })
