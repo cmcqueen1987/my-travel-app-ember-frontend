@@ -1,0 +1,14 @@
+<h2> <button class=submit-button type="submit" {{action 'pressed'}} >Add Country </button> </h2>
+<br>
+{{#if show}}
+<form class="form-container" {{action 'createCountry' on='submit' }}>
+  <div class="form-title">Name</div>
+    {{input
+      value=newCountry.name
+    }}
+
+    <div class="submit-container">
+<button class="submit-button" type="submit" value="Submit" >Save</button>
+</div>
+  </form>
+{{/if}}
