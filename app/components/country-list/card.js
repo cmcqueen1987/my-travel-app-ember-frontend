@@ -8,9 +8,12 @@ actions: {
   toggleCountryDone () {
     return this.sendAction('toggleCountryDone', this.get('country')); //send up to shopping list component
   },
-  actions: {
+
     deleteCountry () {
     return this.sendAction('deleteCountry', this.get('country'));
-     }
+  },
+  clicked () {
+    this.toggleProperty('show');
   }
+}
 });
