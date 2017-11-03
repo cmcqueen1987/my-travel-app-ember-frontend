@@ -8,8 +8,8 @@ export default Ember.Component.extend({
   toggleCountryDetail () {
         return this.toggleProperty('countryDetailHidden');
       },
-      toggleCountryDone (country) {
-        return this.sendAction('toggleCountryDone', country);
+      toggleNoteDone (note) {
+        return this.sendAction('toggleNoteDone', note);
       }
       },
 
