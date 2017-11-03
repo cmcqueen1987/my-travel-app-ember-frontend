@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 classNameBindings: ['countryCompleted'],
 countryCompleted: Ember.computed.alias('country.done'),
 actions: {
-  toggleDone () {
+  toggleCountryDone () {
     return this.sendAction('toggleCountryDone', this.get('country')); //send up to shopping list component
   },
   actions: {
