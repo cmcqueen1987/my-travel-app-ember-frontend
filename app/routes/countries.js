@@ -11,9 +11,17 @@ actions: {
     let newCountry = this.get('store').createRecord('country', country);
       newCountry.save()
       .then(() => {
-        this.get('flashMessages').warning('Country Added');
+        this.get('flashMessages').warning('Added Country');
       });
-
-}
-}
+    },
+    deleteCountry (country) {
+      country.destroyRecord()
+      .then(() => {
+        this.get('flashMessages').warning('Deleted Country');
+      })
+      .catch(() => {
+        this.get('flashMessages').danger('Failed to Deleted Country');
+      });
+    }
+ },
 });

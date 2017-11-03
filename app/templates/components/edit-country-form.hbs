@@ -1,0 +1,10 @@
+<div class="form-title"><h4>Edit Country</h4></div>
+<form class ="form-container"{{action 'editCountry' on='submit'}} >
+  {{input placeholder= 'Edit Country' value=country.name}}
+  <br>
+  <button class='button' type='submit'>Edit</button>
+</form>
+
+{{#link-to 'countries'}}
+return
+{{/link-to}}
