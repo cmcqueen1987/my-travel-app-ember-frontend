@@ -1,0 +1,9 @@
+<h3>Create new Note</h3>
+
+<form {{action 'createNote' on='submit'}}>
+  {{input
+    placeholder='New Note'
+    value=newNote.content
+  }}
+  <button type="submit">Save</button>
+</form>
