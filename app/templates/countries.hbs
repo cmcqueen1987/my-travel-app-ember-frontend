@@ -1,8 +1,10 @@
 
 {{create-form country=country createCountry='createCountry'}}
-<h4>My Countries</h4>
+{{#link-to 'index'}} Go Home {{/link-to}}
+<h4>Countries</h4>
+
 <ul>
 {{#each model as |country|}}
    {{country-list/card country=country deleteCountry='deleteCountry'}}
  {{/each}}
-<ul>
+</ul>

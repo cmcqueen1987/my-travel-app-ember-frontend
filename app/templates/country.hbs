@@ -1,1 +1,14 @@
-{{outlet}}
+<div class="card">
+<div class="card-block">
+  <h1> Name: {{model.name}}</h1>
+
+
+  {{country-list
+  country=model
+}}
+</div>
+</div>
+
+{{#link-to 'countries'}}
+<a href='#' class='button' type="submit" > Return to Country List</a>
+{{/link-to}}
