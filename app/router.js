@@ -11,6 +11,8 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('countries');
+  this.route('countrie', { path: '/countries/:countrie_id' });
+  this.route('edit', { path: '/countries/:countrie_id/edit' });
 });
 
 export default Router;
