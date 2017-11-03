@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('countries');
   this.route('countrie', { path: '/countries/:countrie_id' });
   this.route('edit', { path: '/countries/:countrie_id/edit' });
+  this.route('country');
 });
 
 export default Router;
