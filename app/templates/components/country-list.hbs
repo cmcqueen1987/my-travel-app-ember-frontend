@@ -1,0 +1,13 @@
+<h3 class="country-header" {{action 'toggleCountryDetail'}}>{{country.title}}</h3>
+{{!-- {{country-list/note-form createNote='createNote'}} --}}
+
+<ul>
+
+  {{#each country.notes as |note|}}
+    {{country-list/note
+      note=note
+      toggleNoteDone='toggleNoteDone'
+      deleteNote='deleteNote'
+    }}
+  {{/each}}
+</ul>

@@ -9,7 +9,7 @@ export default ApplicationAdapter.extend({
     const listId = serialized.list_id;
     const url = api + '/countries/' + countryId + '/notes';
     // const url = `$(api)/lists/$(list_id)
-    const data = {item: serialized};
+    const data = {note: serialized};
     return this.ajax(url, 'POST', {data});
   }
 });
