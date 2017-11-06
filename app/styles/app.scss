@@ -3,4 +3,89 @@
 
 h1 {
   text-align: center;
+  font-family: monospace;
+  font-size: 60px;
+  color: blue;
+}
+
+
+h4 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.deleteButton {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 20px;
+  border-radius: 30px;
+
+  color: blue;
+  font-size: 18px;
+  font-family: monospace;
+  text-decoration: none;
+  position: relative;
+    left: + 26%;
+}
+
+.button {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 20px;
+  border-radius: 30px;
+  color: blue;
+  font-size: 18px;
+  font-family: serif;
+  font-family: monospace;
+  text-decoration: none;
+  position: relative;
+  position: relative;
+    left: + 26%;
+}
+
+#navigation {
+  text-align: center;
+  background-color: yellow;
+  color: red;
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1.5px 1.5px 1.5px black, 2px 2px 2px lime;
+  font-family: monospace;
+}
+
+button.submit-button {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-shadow: #ff0000 0 1px 0;
+  color: blue;
+  font-size: 30px;
+  font-family: monospace;
+  text-decoration: none;
+  position: relative;
+  left: + 36%;
+}
+
+h3.nameplate {
+  font-family: Tahoma;
+  font-size: 32px;
+  position: relative;
+  left: + 41%;
+
+
+}
+
+a {
+  font-size: 18px;
+  color: green;
+}
+
+a {
+  font-size: 18px;
+  color: green;
 }

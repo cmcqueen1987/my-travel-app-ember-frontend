@@ -2,5 +2,6 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  hidden: DS.attr('boolean')
-});
+  hidden: DS.attr('boolean'),
+  notes: DS.hasMany('note')
+  });

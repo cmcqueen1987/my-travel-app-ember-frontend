@@ -6,7 +6,7 @@ export default ApplicationAdapter.extend({
     console.log(record);
     const serialized = this.serialize(record);
     // console.log('no id', serialized)
-    const listId = serialized.list_id;
+    const countryId = serialized.country_id;
     const url = api + '/countries/' + countryId + '/notes';
     // const url = `$(api)/lists/$(list_id)
     const data = {note: serialized};
