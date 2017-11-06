@@ -29,7 +29,7 @@ h5 {
   font-family: monospace;
   text-decoration: none;
   position: relative;
-    left: + 26%;
+    right: + 3%;
 }
 
 .button {
@@ -43,7 +43,7 @@ h5 {
   text-decoration: none;
   position: relative;
   position: relative;
-    left: + 26%;
+    right: + 3%;
 }
 
 #navigation {
@@ -67,15 +67,14 @@ button.submit-button {
   font-size: 30px;
   font-family: monospace;
   text-decoration: none;
-  position: relative;
-  left: + 36%;
+
 }
 
 h3.nameplate {
   font-family: Tahoma;
   font-size: 32px;
   position: relative;
-  left: + 41%;
+  right: + 2%;
 
 
 }
@@ -88,4 +87,8 @@ a {
 a {
   font-size: 18px;
   color: green;
+}
+
+.ember-view {
+  text-align: center;
 }
