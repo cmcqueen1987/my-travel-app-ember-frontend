@@ -9,8 +9,8 @@ Link to Backend-Api Repository: https://github.com/cmcqueen1987/my-travel-app-ra
 
 ## Project Wireframe, ERD and User Stories:
 
-Link to Wireframe - https://i.imgur.com/2lk1g7n.jpg
-Link to ERD - https://i.imgur.com/6exP0Cl.jpg
+- Link to Wireframe - https://i.imgur.com/2lk1g7n.jpg
+- Link to ERD - https://i.imgur.com/6exP0Cl.jpg
 
 ## User Stories
 
