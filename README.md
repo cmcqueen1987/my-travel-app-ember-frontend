@@ -1,74 +1,83 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+Travel Bug App - Capstone Project
 
-# Authentication in Ember
+By Charles McQueen (WDI 20)
 
-This training will involve a lot of following code and and exploring the
-Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
-comment code or take notes.
+Link To Deployed Site: https://cmcqueen1987.github.io/my-travel-app-ember-frontend/#/
 
-## Prerequisites
+Link to Backend-Api Deployed Site: https://my-travel-app-capstone.herokuapp.com/
+Link to Backend-Api Repository: https://github.com/cmcqueen1987/my-travel-app-rails-backend
 
--   [Ember Resources](https://github.com/ga-wdi-boston/ember-resources)
+Project Wireframe, ERD and User Stories:
 
-## Objectives
+Link to Wireframe - https://i.imgur.com/2lk1g7n.jpg
+Link to ERD - https://i.imgur.com/6exP0Cl.jpg
 
-By the end of this, developers should be able to:
+User Stories
 
--   Implement token authentication in an Ember application.
--   Enforce authentication in protected routes.
+- A user can sign-up and sign-in with a username/email and a password
+- A user can change their password and signout of their profile
+- A user can create a list of countries they have visited and have their list save everytime they log-in and log-out
+- A user can add countries to their list anytime
+- A user can edit the countries on their list anytime
+- A user can delete counties from their list anytime
 
-## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
-1.  Install dependencies with `npm install` and `bower install`.
-1.  Start any API based on a recent version of the [Rails API
-    Template](https://github.com/ga-wdi-boston/rails-api-template) or the
-    [Express API
-    Template](https://github.com/ga-wdi-boston/express-api-template).
-1.  Start the front-end server with `ember server`.
+About My App!
 
-## From end to end
+Travel Bug is designed for travel hungry users to be able to create a list of countries around the world they have traveled to. The user will be promped to click the add a country button and then fill in the correct fields. Once the fields have been filled and the add country button is submitted, the user can see their added country below. A user also has the ability to alter their list by editing their countries as well as delete any countries they may have added by mistake. This is a simple one to many relationship idea (A user can have many countries)
 
-Watch as I sign up for a new account on our demo app.
+This application is mirrored from my first travel application project except this time around I decided to build it using Ember.js. I wanted to try and build my travel app using ember because it is currently the most popular javascript framework and would be great practice. I really enjoyed building this project using ember and look forward to building more apps with the framework soon!
 
-*Other than the flash messages on the page, did anything change?  What about in
-the Chrome Developer Tools?*
+Steps Taken to Complete the Project / Development Process
 
-Take some time and sign in on your own, and check to see if anything in the
-Chrome Dev Tools has changed.
+- Drew up a couple of different wireframes as well as an ERD to prep for my project.
+- Set up a personal workflow schedule with deadlines in which I wanted to hit. Also made a personal requriements checklist to help keep me organized.
+- Made sure I could deploy the basic ember auth template to use as my front end frame.
+- Used Heroku app to help create backend.
+- wrote my backend using rails where I was successfully able to create migrations. I used my project 2 rails api for reference as well as the Listr api.
+- After creating a basic backend I then switched to the front end and began following commits from the lesson starting with the routes.
+- Slowly and methodically build my ember app carfully following commits by generating models, components, routes, serializers to create CRUD actions for countries.
 
-Now that we have added a key tool to our personal developer toolkit lets look
-at how it's implemented.
+** The steps taken above were not in order all of the time as I did jump around a bit from my front and back end. This was a difficult project from start to finish, but was a great experience and will continue to use ember.
 
-## Follow Along
 
-Let's walk through file by file to see what's happening.  I will ask
-developers to guide me through the files while correcting any misunderstandings.
+## API end-points
 
-First let's start down the template and component trail, then we'll work our way
-up with actions.
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| DELETE | `/sign-out/:id`        | `users#signout`   |
+| PATCH  | `/change-password/:id` | `users#changepw`  |
+| GET    | `/countries`           | `countries#index` |
+| POST   | `/countries`           | `countries#create`|
+| GET    | `/countries/:id`       | `countries#show`  |
+| PATCH  | `/countries/:id`       | `countries#update`|
+| DELETE | `/countries/:id`       | `countries#destroy` |
 
-*Remember: Data down, actions up.*
+Resources Used to Help Me
 
-While going up the Ember hierarchy we may need to stop a some point to discuss
-services.
+- Class Notes
+- Listr App
+- Github
+- Stack Overflow
+- MDN
+- ATOM
 
-## Additional Resources
 
--   [Implementing Authentication with Ember Services - Ember
-    Igniter](http://emberigniter.com/implementing-authentication-with-ember-services/)
--   [jpadilla/ember-simple-auth-token: Ember Simple Auth extension that is
-    compatible with token-based authentication like
-    JWT.](https://github.com/jpadilla/ember-simple-auth-token)
--   [simplabs/ember-simple-auth: A library for implementing
-    authentication/authorization in Ember.js
-    applications.](https://github.com/simplabs/ember-simple-auth)
--   [Create your first Ember 2.0 app: From authentication to calling an
-    API](https://auth0.com/blog/2015/08/11/create-your-first-ember-2-dot-0-app-from-authentication-to-calling-an-api/)
+Technologies Used to Create Project
 
-## [License](LICENSE)
+- HTML
+- CSS
+- Javascript
+- Ember
+- Ruby
+- Rails
+- Git
+- Heroku
+- AJax
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+
+Unsolved Problems
+
+I was able to complete the basic crud actions for my app. I really wanted to add a notes section for each country and was even able to create the route needed, but had trouble posting the notes. For the sake of time and with requirments at stake I decided to pass on this feature. I will continue to work on this project and complete the note feature.
