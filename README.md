@@ -2,6 +2,8 @@
 
 <h3>By Charles McQueen (WDI 20)</h3>
 
+![Alt text](https://i.imgur.com/y7TGe8O.png)
+
 - Link To Deployed Site: https://cmcqueen1987.github.io/my-travel-app-ember-frontend/#/
 
 - Link to Backend-Api Deployed Site: https://my-travel-app-capstone.herokuapp.com/
