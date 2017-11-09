@@ -4,10 +4,13 @@
 
 ![Alt text](https://i.imgur.com/y7TGe8O.png)
 
-- Link To Deployed Site: https://cmcqueen1987.github.io/my-travel-app-ember-frontend/#/
+## Link To Deployed Site:
+https://cmcqueen1987.github.io/my-travel-app-ember-frontend/#/
 
-- Link to Backend-Api Deployed Site: https://my-travel-app-capstone.herokuapp.com/
-- Link to Backend-Api Repository: https://github.com/cmcqueen1987/my-travel-app-rails-backend
+## Link to Backend-Api Deployed Site:
+https://my-travel-app-capstone.herokuapp.com/
+## Link to Backend-Api Repository:
+https://github.com/cmcqueen1987/my-travel-app-rails-backend
 
 ## Project Wireframe, ERD and User Stories:
 
